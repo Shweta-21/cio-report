@@ -8,7 +8,7 @@ if($method == "POST"){
     $json = json_decode($requestBody);
 
     $text = $json->result->parameters->text;
-    echo ($text + 'echoing data');
+    echo ('echoing data');
 
     switch($text) {
         case 'hi':
@@ -31,6 +31,7 @@ if($method == "POST"){
     $response->displayText = "";
     $response->source = "webhook";
     echo json_encode($response);
+    echo ('echoing data2');
 }
 else{
     echo "method not allowed";
