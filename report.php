@@ -10,22 +10,6 @@ if($method == "POST"){
     $event = $json->event_type;
     $campaign = $json->data->campaign_name;
 
-//     switch($text) {
-//         case 'hi':
-//             $speech = "Hi, Nice to meet you";
-//             break;
-
-//         case 'bye':
-//             $speech = "Bye, Good Night";
-//             break;
-        
-//         case 'anything':
-//             $speech = "Yes, you can type anything here.";
-//             break;
-//         default:
-//             $speech = "sorry, I ddint get that, Please ask me something else.";
-//             break;
-//     }
     $response = new \stdClass();
     $response->event = $event;
     $response->campaign = $campaign;
