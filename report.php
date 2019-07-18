@@ -13,7 +13,10 @@ if($method == "POST"){
     $response = new \stdClass();
     $response->event = $event;
     $response->campaign = $campaign;
-    echo json_encode($response);
+    $res =  json_encode($response);
+    echo $res;
+
+    mail("shweta.s@endurance.com","My subject",$res);    
 }
 else{
     echo "method not allowed";
