@@ -16,7 +16,7 @@ if($method == "POST"){
     $res =  json_encode($response);
     echo $res;
 
-    mail("shweta.s@endurance.com","My subject",$res);    
+    mail("shweta.s@endurance.com","CIO-Report",$res);    
 }
 else{
     echo "method not allowed";
