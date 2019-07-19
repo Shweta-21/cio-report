@@ -16,7 +16,7 @@ if($method == "POST"){
     $response->event_type = $json->event_type;
     $response->timestamp = $json->timestamp;
     $res =  json_encode($response);
-    return $res;
+    echo $res;
 
     mail("shweta.s@endurance.com","CIO-Report",$res);    
 }
