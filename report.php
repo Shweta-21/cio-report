@@ -3,9 +3,16 @@
 $json = file_get_contents('php://input');
 $data = json_decode($json,1);
 
+$data_static = "Sab lemon hai...";
+
 $fWrite = fopen("log.txt","a");
 $wrote = fwrite($fWrite, $data);
+
+$fWriteS = fopen("log_static.txt","a");
+$wroteS = fwrite($fWriteS, $data_static);
+
 fclose($fWrite);
+fclose($fWriteS);
 
 
 
