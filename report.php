@@ -14,9 +14,13 @@
     $response->timestamp = $json->timestamp;
     $res =  json_encode($response);
     echo $res;
-    getResponse($res);
-
+  
+ 
     mail("shweta.s@endurance.com","CIO-Report",$res);    
 
 ?>
 <script src="script.js"></script>
+
+<?php 
+  getResponse($res);
+?>

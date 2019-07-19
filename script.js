@@ -1,3 +1,3 @@
 function getResponse(res){
-    $('#report').innerHTML(res);
+    $('#report').html(res);
 }
