@@ -4,6 +4,9 @@ $json = file_get_contents('php://input');
 $data = json_decode($json,1);
 
 $data_static = "Sab lemon hai...";
+echo "Static data : " . $data_static;
+
+var_dump($data);
 
 $fWrite = fopen("log.txt","a");
 $wrote = fwrite($fWrite, $data);
