@@ -19,8 +19,3 @@
     mail("shweta.s@endurance.com","CIO-Report",$res);    
 
 ?>
-<script src="script.js"></script>
-
-<?php 
-  getResponse($res);
-?>
