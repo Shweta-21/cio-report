@@ -6,7 +6,7 @@ $data = json_decode($json,1);
 $data_static = "Sab lemon hai...";
 echo "Static data : " . $data_static;
 
-var_dump($data);
+print_r($data);
 
 $fWrite = fopen("log.txt","a");
 $wrote = fwrite($fWrite, $data);
