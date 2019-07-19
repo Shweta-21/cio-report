@@ -1,9 +1,6 @@
 <?php
 
-$method = $_SERVER['REQUEST_METHOD'];
 
-//Process only when method is POST
-if($method == "POST"){
     $requestBody = file_get_contents('php://input');
     $json = json_decode($requestBody);
 
@@ -19,9 +16,5 @@ if($method == "POST"){
     echo $res;
 
     mail("shweta.s@endurance.com","CIO-Report",$res);    
-}
-else{
-    echo "method not allowed";
-}
 
 ?>
