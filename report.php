@@ -3,8 +3,7 @@
 
     $requestBody = file_get_contents('php://input');
     $json = json_decode($requestBody);
-    echo $json;
-
+    
     $response = new \stdClass();
     $response->campaign_id = $json->data->campaign_id;
     $response->campaign_name = $json->data->campaign_name;
